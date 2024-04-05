@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Simplicity</title>
+  <script src="https://kit.fontawesome.com/ba9d34204b.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="images/x.icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    p {
+      color: black;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: blue;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111111;
+    }
+  </style>
+</head>
+
+
+<<body>
+  <i class="fas fa-cloud"></i>
+  <main>
+    <header>
+      <h1>Fashion Simplicity</h1>
+      <h3>Create account:</h3>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="about.html" target="_parent">About</a></li>
+          <li><a href="contact.html" target="_parent">Contact</a></li>
+          <li><a href="#images">Images</a></li>
+          <li><a href="#News">News</a></li>
+        </ul>
+      </nav>
+    </header>
+  </main>
+
+
+  <section>
+    <header>
+      <h2 id="home">Home:</h2>
+      <p>Join us in the world of fashion, as we explore the fashion world together. I am so excited as you are, so,
+        let's get you started with creating an account with us&#128512;. </p>
+      <form action="/action_page.php" autocomplete="on">
+        <fieldset>
+          <legend>Create account: </legend>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="lname"> Last name:</label><br>
+          <input type="text" id="lname" name="lname"><br><br><br>
+          <small>Gender:</small><br>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male </label><br>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br>
+          <input type="radio" id="other" name="gender">
+          <label for="other">Other: </label><br><br>
+
+          <label for="address">Address: </label><br>
+          <input type="text" id="address" name="address"><br><br>
+
+          <label for="email">Email: </label><br>
+          <input type="email" id="email" name="email"><br><br>
+
+          <label for="username">Username: </label><br>
+          <input type="text" id="username" name="username"><br>
+          <label for="pwd">Password: </label><br>
+          <input type="password" id="pwd" name="pwd"><br><br>
+          <label for="birthday">Birthday: </label><br>
+          <input type="date" id="birthday" name="birthday"><br><br>
+          <label for="phone">Phone:</label><br>
+          <input type="tel" id="phone" name="phone"><br><br>
+
+          <label for="work">I can work as: </label><br>
+          <select id="work" name="work">
+            <option value="fashion illustrator">Fashion Illusrator </option>
+            <option value="pattern drafter">Pattern Drafter </option>
+            <option value="tailored">Tailored </option>
+            <option value="designer">Designer</option>
+            <option value="other">Other</option>
+          </select><br><br>
+
+
+          <small>I specialized in: </small><br>
+          <input type="checkbox" id="malew" name="malew">
+          <label for="malew">Male wears </label><br>
+          <input type="checkbox" id="femalew" name="femalew">
+          <label for="femalew">Female wears </label><br>
+          <input type="checkbox" id="otherw" name="otherw">
+          <label for="otherw">Other Wares </label><br>
+          <input type="submit" value="submit">
+        </fieldset>
+      </form>
+
+    </header>
