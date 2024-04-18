@@ -3,28 +3,81 @@
 }
 
 html {
-  font-size: 17px;
+  font-size: 13px;
 }
 
-@media (max-width: 900px) {
+
+@media screen and (min-width: 780px) {
   html {
     font-size: 15px;
   }
 }
 
-@media (max-width: 400px) {
+@media screen and (min-width: 1000px) {
   html {
-    font-size: 13px;
+    font-size: 17px;
   }
 }
 
-h1 {
-  font-size: 3rem;
+#content {
+  color:rgb(82, 55, 3); 
+  font-size:12px;
+  padding: 4px;
 }
 
-h2 {
-  font-size: 2.5rem;
+@media screen and (min-width:650px) {
+  #content {
+    color:rgb(28, 26, 36); 
+    font-size:13px;
+  }
 }
+
+@media screen and (min-width:1000px) {
+  #content {
+    color:rgb(40, 11, 170); 
+    font-size:14px;
+  
+}
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media screen and (min-width: 600px)  {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1000px)  {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+
+
+h2 {
+  font-size: 1.5rem;
+  color: yellowgreen;
+}
+
+@media screen and (min-width: 600px)  {
+  h2 {
+    font-size: 2.5rem;
+    color: peru;
+  }
+}
+
+@media screen and (min-width: 1100px)  {
+  h2 {
+    font-size: 3.5rem;
+    color: purple;
+  }
+}
+
 
 h3 {
   font-size: 2rem;
@@ -36,85 +89,171 @@ body {
   font-size: 1vw;
 }
 
-h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+p {
+  font-size: 12px;
 }
 
-p {
-  font-size: 16px;
+@media screen and (min-width: 600px)  {
+  p {
+    font-size: 15px;
+  }
 }
+
 
 header {
   background-color: #becfe0;
   color: #131da4;
-  font-size: 1.5rem;
   text-align: center;
   padding-bottom: 20px;
   border: 1px solid blue;
   height: auto;
-  max-width: 100%;
   overflow: auto;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  header {
-    font-size: 1rem;
-  }
-}
 
 nav {
   border: 1px solid coral;
-  height: auto;
-  max-width: 100%;
-  margin-top: 20px;
+  color: #06425C;
   background-color: #c89292;
-  text-align: space-evenly;
-}
-
-.nav1 ul {
-  font-size: 20px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: fixed;
-}
-
-.nav1 li {
-  display: inline;
-}
-
-.nav1 li a {
-  color: #2c033f;
-  text-decoration: none;
   overflow: auto;
-  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  padding-top: 15px;
   text-align: space-evenly;
-  font-size: 20px;
+  overflow: hidden;
 }
 
-.nav1 li a:hover {
+@media screen and (min-width: 1000px) {
+  nav {
+    border: 1px solid blue;
+    background-color: rgb(236, 214, 234);
+    color: #031803;
+    display: block;
+    width: 20%;
+    min-width: 125px;
+    margin-right: 15px;
+    height: 100vh;
+    float: left;
+    position: sticky;
+  }
+}
+
+
+ nav ul {
+  font-size: 3em;
+  list-style-type: none;
+}
+
+ @media screen and (min-width:350px) {
+ nav ul { font-size: 4em;
+ }
+}
+
+
+@media screen and (min-width:600px) {
+  nav ul {
+    font-size: 5em;
+  }
+}
+
+
+@media screen and (min-width:1000px) {
+  nav ul {
+    font-size: 2em;
+  }
+}
+
+nav li {
+  display: inline;
+  border: 1px solid gray;
+  background-color: lightgrey;
+  padding: 6px;
+  border-radius: 25%;
+  margin: 2px;
+  }
+
+  @media screen and (min-width:350px) {
+    nav li { padding: auto;
+           }
+  }
+
+  @media screen and (min-width:1000px) {
+    nav li {
+      display: block;
+      float: left;
+    }
+  }
+
+  @media screen and (min-width:1000px) {
+    nav li {
+      display: block;
+      border: 1px solid rgb(226, 196, 211);
+      background-color: rgb(240, 177, 177);
+      padding: 25px;
+      border-radius: 25%;
+      margin: 10px;
+      line-height: 45px;
+      height: auto;
+      }
+  }
+
+nav li a {
+  text-decoration: none;
+  color:#031803;
+}
+
+nav li a:hover {
   background-color: #09ce09;
   color: white;
 }
 
+@media screen and (min-width: 1000px) {
+  nav li a:hover {
+    background-color: #b1c5b1;
+    color: rgb(15, 15, 15);
+  }
+  
+}
+
 .container {
+  box-sizing: border-box;
   display: grid;
-  grid-template-columns: auto, auto, auto, auto;
-  justify-content: space-around;
-  align-content: space-around;
-  margin-top: 10px;
+  grid-template-columns: 95%;
+  justify-content: space-evenly;
+  row-gap: 30px;
+  width: 100%;
+  height: auto;
+  text-align: center;
 }
 
 .content {
   border: 1px solid black;
-  max-width: 90%;
+  min-width: 90%;
   overflow: auto;
   height: 300px;
-  font-size: 16px;
   background-color: #bdeadf;
   justify-content: space-around;
-  margin: 10px 10px 10px 10px;
+  line-height: 2rem;
+  margin-left: 5px;
+  align-items: center;
+  margin: 10px;
+  width: 100%
+}
+
+@media screen and (min-width: 600px)  {
+  .container {
+    grid-template-columns: 45% 45%;
+    text-align: center;
+     }
+}
+
+@media screen and (min-width: 1000px)  {
+  .container {
+    grid-template-columns: 48% 48%;
+    text-align: center;
+    justify-content: space-around;
+     }
 }
 
 .gallery div {
@@ -159,18 +298,47 @@ footer {
   height: 200px;
   background-color: #da678a;
   color: #2c033f;
-  font-size: 0.75rem;
+  font-size: 0.75em;
 }
+
+@media screen and (min-width: 600px) {
+  footer {
+    font-size: 1.3em;
+  } 
+}
+
+@media screen and (min-width: 1000px) {
+  footer {
+    font-size: 2.5em;
+  } 
+}
+
 
 footer a {
   display: inline;
-  font-size: 15px;
+  font-size: 10px;
   text-decoration: none;
+  padding: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  footer a {
+    font-size: 12px;
+    padding: 13px;
+  } 
+}
+
+@media screen and (min-width: 1000px) {
+  footer a {
+    font-size: 15px;
+    padding: 20px;
+  } 
 }
 
 footer a:hover {
   text-decoration: underline;
-  background-color: gray;
+  background-color: transparent;
+  color: #031803;
 }
 
 button {
@@ -197,10 +365,40 @@ img:focus {
   padding-left: 20px;
 }
 
+@media screen and (min-width: 1000px) {
+  #headerimg {
+    float: left;
+    width: 75%;
+  }
+  
+}
+
 #main {
   display: block;
   background-color: lightgreen;
   height: 250px;
+}
+
+address {
+  color: deepskyblue;
+   font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #031803;
+}
+
+a:hover {
+  background-color:#becfe0;
+  color:rgb(6, 43, 12);
+  text-decoration: underline;
+  
+}
+
+figure img {
+  width:50%; 
+  height:50%;
 }
 
 /*#show {
